@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PAPW</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,label {font-family: "Open Sans", sans-serif}
+</style>
+</head>
+<body class="w3-theme-l5">
+
+ <style>
+body, html {
+      background: url(paper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+input {
+  border-radius: 5px;
+}
+img{
+  border-radius: 5px; 
+  size: 100%; 
+}
+img:hover{
+  filter:brightness(125%);
+}
+button {
+  border-radius: 5px; 
+}
+.w3-hover-light-gray:hover {
+  color:#000 !important; 
+  background-color:#c0c0c0 !important
+}
+
+.w3-inputnuevo{
+  height: 5%;
+  width: 50%; 
+}
+
+.w3-inputusuario{
+  height: 30px;
+  width: 10%; 
+  color: #000;
+  margin: 10px; 
+  font-size: 15px;
+  
+}
+
+.w3-inputarticulo{
+  height: 30px;
+  width: 10%; 
+  color: #000;
+  margin: 10px; 
+  font-size: 15px;
+}
+
+select{
+    border-radius: 5px; 
+    width: 10%;
+    height: 30px;
+}
+
+textarea{
+    width: 75%;
+    height: 250%;
+    resize: none; 
+    border-radius: 5px; 
+}
+
+</style>
+
+<div class="bg"></div>
+<!-- Navbar -->
+<div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+         <a href="algo1-version2.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+         
+         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+           <img src="avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+           Nombre del usuario
+         </a>
+    </div>
+</div>
+
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="#" onclick="AlertaCarrito()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Carrito"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+  
+  <div>
+  <input type="password" id="ContraseñaQueExiste" name="UsuarioExistente" class="w3-border w3-padding w3-inputusuario w3-right" maxlength="20" placeholder="Contraseña" >
+  <input type="text"  id="UsuarioQueExiste"name="ContraseñaExistente" class="w3-border w3-padding w3-inputusuario w3-right" maxlength="20" placeholder="Usuario" >
+  
+  <a href="algo1-version2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right" onclick="AlertaSesionIniciada()" title="My Account">
+    
+    <img src="avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="usuario">
+    Inicia sesión
+  </a>
+  </div>
+</div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Carrito</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Mi cuenta</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m12">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+          <form action="/action_page.php" method="get">
+            <hr>
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-right" onclick="alert('Se abre una ventada para cargar una imagen')"><i class="glyphicon glyphicon-plus"></i></button> 
+           
+            <p class="w3-center"><img src="SS1.png" class="" style="height:400px; width: 600px;" alt="NuevaImagen"onclick="alert('Imágenes')"></p>
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-right" onclick="alert('Se recorre una imagen a la derecha')"><i class="glyphicon glyphicon-chevron-right"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-left" onclick="alert('Se recorre una imagen a la izquierda')"><i class="glyphicon glyphicon-chevron-left"></i></button> 
+            <hr>
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-right" onclick="alert('Se abre una ventada para cargar una imagen')"><i class="glyphicon glyphicon-plus"></i></button> 
+            <p class="w3-center"><img src="SS1.png" class="" style="height:400px; width: 600px;" alt="NuevaVideo" onclick="alert('Video')"></p>
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-right" onclick="alert('Se recorre un vídeo a la derecha')"><i class="glyphicon glyphicon-chevron-right"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom w3-left" onclick="alert('Se recorre un vídeo a la izquierda')"><i class="glyphicon glyphicon-chevron-left"></i></button> 
+
+            <hr>
+            
+            <div class="w3-center">
+            <label>Nombre:</label>
+            <input type="text"  name="nombre" class="w3-border w3-padding w3-center w3-margin-bottom w3-inputnuevo" maxlength="20" placeholder="Nombre del artículo" required>
+            </div>
+   
+            <div class="w3-center">
+            <label>Descripción:</label>
+            <input type="text" name="descripcion" class="w3-border w3-padding w3-center w3-margin-bottom w3-inputnuevo" maxlength="200" placeholder="Descripción del artículo" required>
+            </div>
+   
+           
+            <div class="w3-center">
+            
+            <label>Categoría:</label>
+                <select required>
+                        <option>Automotriz</option>
+                        <option>Belleza</option>
+                        <option>Libros</option>
+                        <option>Farmacia</option>
+                        <option>Celulares</option>
+                        <option>Ropa</option>
+                        <option>Electrónicos</option>
+                </select>
+
+            <label>Precio:</label>
+            <input type="number" name="precio" class="w3-border w3-padding w3-center w3-margin-bottom w3-inputnuevo w3-inputarticulo"placeholder="Precio" min="0" max="10000" required>
+            
+            <label>Unidades:</label>
+            <input type="number" name="telefono" class="w3-border w3-padding w3-center w3-margin-bottom w3-inputnuevo w3-inputarticulo" placeholder="Unidades"  min="0" max="10000" required>
+            <div>
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
+            <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
+            </div>
+            </div>
+
+            <div class="w3-center">
+            <button type="submit" value="Submit" class="w3-button w3-theme-d2 w3-margin-bottom">Subir artículo</button>
+            <button type="reset" value="Reset" class="w3-button w3-theme-d2 w3-margin-bottom">Cancelar</button>
+            </div>
+           </form>
+
+           <hr class="w3-clear">
+
+           <div class="w3-center">
+            <img src="avatar3.png" class="w3-circle" style="height:60px;width:60px" alt="UsuarioQueComento">
+           <textarea placeholder="Escribe porfavor tu comentario..."></textarea>
+           <div>
+           <button type="submit" value="Submit" class="w3-button w3-theme-d2 w3-margin-bottom">Subir comentario</button>
+           <button type="reset" value="Reset" class="w3-button w3-theme-d2 w3-margin-bottom">Cancelar</button>
+           </div>
+           </div>
+
+      
+          <!--
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme w3-center"></i> Número de estrellas<i class="fa fa-home fa-fw w3-margin-right w3-text-theme w3-center"></i> Número de amigos<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme w3-center"></i> Años de edad</p>
+         -->
+         <hr class="w3-clear">
+      </div>
+
+      </div>
+      <br>
+      <br>
+
+    </div>
+
+    </div>
+    <!-- End Left Column -->
+    </div>
+       
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5></h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5 w3-padding-15">
+  <p></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function AlertaCarrito() {
+   alert("Se debe tener iniciada la sesión para poder agregar cosas al carrito"); 
+}
+
+function AlertaSesionIniciada() {
+  var x = document.getElementById("UsuarioQueExiste").value;
+  var bienvenida = "Bienvenido:\n" + x; 
+   alert(bienvenida); 
+}
+
+</script>
+
+</body>
+</html> 
