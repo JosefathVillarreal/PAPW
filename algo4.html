@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PAPW/POI</title>
+<title>PAPW</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,29 +24,42 @@ body, html {
   background-size: cover;
 
 }
+img{
+  border-radius: 5px; 
+  size: 100%; 
+}
+img:hover{
+  filter:brightness(125%);
+}
 
 </style>
 
 <div class="bg"></div>
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="glyphicon glyphicon-knight"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-    Nombre del usuario
-  </a>
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars" title="Inicio"></i></a>
+   <a href="algo1-version2.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+   
+   <a href="algo4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Carrito"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+   
+   <div class="w3-right">
+         <a href="algo3.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Mi cuenta">Salir</a>       
+   </div>
+ 
+   <a href="algo3.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Mi cuenta">
+     <img src="avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+     Nombre del usuario
+   </a>
+   
+  </div>
  </div>
-</div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Carrito</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Mi cuenta</a>
 </div>
 
 <!-- Page Container -->
@@ -62,8 +75,30 @@ body, html {
          <p class="w3-center"><img src="avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
 
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme w3-center"></i> Número de estrellas<i class="fa fa-home fa-fw w3-margin-right w3-text-theme w3-center"></i> Número de amigos<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme w3-center"></i> Años de edad</p>
+         <div>
+            <div>
+                <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="fa fa-pencil"></i></button> 
+                <button type="button" class="w3-button w3-theme-d2 w3-circle w3-right"onclick="alert('¿Desea eliminar la publicación?')"><i class="fa fa-remove"></i></button> 
+            </div>
+          <img src="lights.jpg" class="w3-circle" style="height:106px;width:106px" alt="producto" onclick="alert('Imagen de producto comprado')">
+           <span><h4>Nombre del artículo</h4></span>
+           <span><h4>Cantidad</h4></span>
+           <span><h4>Fecha de compra</h4></span>
+         </div>
          <hr class="w3-clear">
+
+         <div>
+            <div>
+                <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="fa fa-pencil"></i></button> 
+                <button type="button" class="w3-button w3-theme-d2 w3-circle w3-right"onclick="alert('¿Desea eliminar la publicación?')"><i class="fa fa-remove"></i></button> 
+            </div>
+          <img src="lights.jpg" class="w3-circle" style="height:106px;width:106px" alt="producto" onclick="alert('Imagen de producto comprado')">
+           <span><h4>Nombre del artículo</h4></span>
+           <span><h4>Cantidad</h4></span>
+           <span><h4>Fecha de compra</h4></span>
+         </div>
+         <hr class="w3-clear">
+
       </div>
       
     </div>
