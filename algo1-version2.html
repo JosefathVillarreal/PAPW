@@ -15,6 +15,7 @@ input {
   border-radius: 5px; 
 
 }
+
 img{
   border-radius: 5px; 
 }
@@ -60,9 +61,9 @@ body, html {
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars" title="Inicio"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="algo1-version2.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i></a>
   
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Carrito"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+  <a href="algo4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Carrito"><i class="glyphicon glyphicon-shopping-cart"></i></a>
   
   <div class="w3-right">
         <a href="algo3.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Mi cuenta">Salir</a>       
@@ -115,13 +116,14 @@ body, html {
               <input type="text" class="w3-border w3-padding  w3-margin-bottom" placeholder="Buscar usuario">
               <input type="text" class="w3-border w3-padding  w3-margin-bottom" placeholder="Buscar descripción">
               <input type="text" class="w3-border w3-padding  w3-margin-bottom" placeholder="Puede buscar algo aquí ">
-              <label>Fecha de inicio:</label><input type="date">
-              <label>Fecha de fin:</label><input type="date">
+              
+              <div><label>Fecha de inicio:</label><input type="date"></div>
+              <div><label>Fecha de fin:</label><input type="date"></div>
             </div>
             
       </div>
       <br>
-      <button type="button" class="w3-button w3-theme w3-margin-bottom w3-margin-left w3-center"><i class="fa fa-pencil"></i>Buscar</button> 
+      <button type="button" class="w3-button w3-theme w3-margin-bottom w3-margin-left w3-center" onclick="alert('Se filtra por los parámetros puestos')"><i class="fa fa-pencil"></i>Buscar</button> 
       </div>
       <br>
       
@@ -237,12 +239,15 @@ body, html {
         <h4>Decripción:</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <hr class="w3-clear">
+        <h5></h4>Categoría:</h5>
+        <span class="w3-tag w3-small w3-hover-white w3-theme-d5">Automotriz</span>
+        <hr class="w3-clear">
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i><a href="algo5-version2.html">Comment</a></button> 
+        <a href="algo5-version2.html"><button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>Comment</button></a> 
      
        </div>
      
@@ -266,6 +271,9 @@ body, html {
          <hr class="w3-clear">
         <h4>Decripción:</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr class="w3-clear">
+        <h5></h4>Categoría:</h5>
+        <span class="w3-tag w3-small w3-hover-white w3-theme-d4">Belleza</span>
         <hr class="w3-clear">
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
         <button type="button" class="w3-button w3-theme-d1 w3-circle w3-margin-bottom"><i class="glyphicon glyphicon-star-empty"></i></button> 
